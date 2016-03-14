@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="Centeva">
+	<head>
+	    <title>Centeva | Service Excellence in Pursuit of Customer Excellence</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<link href="temp/app.css" type="text/css" rel="stylesheet">
+		  <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36796602-1']);
+        _gaq.push(['_setDomainName', 'centeva.com']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60679155-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	</head>
+	<body>
+ <div id="page">
+		<div id="header">
+            <div id="header-Logo" title="Centeva"></div>
+            <div id="header-Menu" >
+                <table cellpadding="7">
+                    <tr valign="middle" align="center">
+                        <td><a href="#/home" ng-class="{'menuSelected': $state.includes('home')}">Home</a></td>
+                        <td><a href="#/mission" ng-class="{'menuSelected': $state.includes('mission')}">Mission</a></td>
+                        <td><a href="#/about" ng-class="{'menuSelected': $state.includes('about')}">About</a></td>
+                        <td><a href="#/solutions" ng-class="{'menuSelected': $state.includes('solutions')}">Solutions</a></td>
+                        <td><a href="#/seaporte" ng-class="{'menuSelected': $state.includes('seaporte')}">SeaPort-e</a></td>
+                        <td><a href="#/careers" ng-class="{'menuSelected': $state.includes('careers')}">Careers</a></td>
+                        <td><a href="#/contact" ng-class="{'menuSelected': $state.includes('contact')}">Contact</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="page-Divider" ></div>
+        </div>
+		
+		<div class="container" ui-view></div>
+		<div class="page-Divider" ></div>
+        <div id="footer georgia-Font">
+            <div id="footer-Icons">
+                <a id="footer-Icons-Facebook" href="http://facebook.com/centeva.8" title="Facebook"></a>
+                <a id="footer-Icons-Twitter" href="http://twitter.com/centeva" title="Twitter"></a>
+                <a id="footer-Icons-LinkedIn" href="http://www.linkedin.com/company/centeva" title="LinkedIn"></a>
+            </div>
+            <div id="footer-Address">
+                10813 River Front Parkway, Suite #135 / South Jordan, UT 84095
+            </div>
+            <div id="footer-Copyright">
+                &copy; Copyright 2013 <a href="http://www.centeva.com" title="Centeva">Centeva</a>. All rights reserved.
+            </div>
+            <div style="clear:both"></div>
+        </div>
+
+		<script replace="true" src="temp/bower_scripts.js"></script>
+		<script replace="true" src="temp/app_scripts.min.js"></script>
+
+	</body>
+</html>
